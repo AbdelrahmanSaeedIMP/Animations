@@ -1,0 +1,59 @@
+.solar-system-container {
+    height: 150vh;
+    background: linear-gradient(to bottom, rgb(87, 85, 85), black);
+}
+
+.star,
+.planet {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    top: calc(70% - var(--size)/2 + 6rem);
+    left: calc(50% - var(--size)/2);
+    border-radius: 50%;
+}
+
+.sun {
+    --size: 100px;
+    background-color: yellow;
+}
+
+.mercury {
+    --size: 20px;
+    background: gray;
+}
+
+.venus {
+    --size: 30px;
+    background: brown;
+}
+
+.earth {
+    --size: 40px;
+    background: skyblue;
+}
+
+.mars {
+    --size: 60px;
+    background: orange;
+}
+
+.jupiter {
+    --size: 50px;
+    background: purple;
+}
+
+.saturn {
+    --size: 50px;
+    background: rgb(174, 14, 14);
+}
+
+.uranus {
+    --size: 35px;
+    background: rgb(189, 99, 189);
+}
+
+.neptune {
+    --size: 20px;
+    background: blue;
+}

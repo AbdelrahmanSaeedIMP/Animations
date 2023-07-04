@@ -1,0 +1,19 @@
+<div class="solar-system-container">
+    <div class="star sun"></div>
+    <div [@spin]="{value:mercuryState ,params:{translateValue:'80px', duration: '3s'}}"
+        (@spin.done)="mercuryState = mercuryState === 'spinning' ? '*' : 'spinning'" class="planet mercury"></div>
+    <div [@spin]="{value:venusState ,params:{translateValue:'120px', duration: '3.5s'}}"
+        (@spin.done)="venusState = venusState === 'spinning' ? '*' : 'spinning'" class="planet venus"></div>
+    <div [@spin]="{value:earthState ,params:{translateValue:'160px', duration: '4s'}}"
+        (@spin.done)="earthState = earthState === 'spinning' ? '*' : 'spinning'" class="planet earth"></div>
+    <div [@spin]="{value:marsState ,params:{translateValue:'220px', duration: '4.5s'}}"
+        (@spin.done)="marsState = marsState === 'spinning' ? '*' : 'spinning'" class="planet mars"></div>
+    <div [@spin]="{value:jupiterState ,params:{translateValue:'280px', duration: '3.2s'}}"
+        (@spin.done)="jupiterState = jupiterState === 'spinning' ? '*' : 'spinning'" class="planet jupiter"></div>
+    <div [@spin]="{value:saturnState ,params:{translateValue:'330px', duration: '3.7s'}}"
+        (@spin.done)="saturnState = saturnState === 'spinning' ? '*' : 'spinning'" class="planet saturn"></div>
+    <div [@spin]="{value:uranusState ,params:{translateValue:'370px', duration: '4.2s'}}"
+        (@spin.done)="uranusState = uranusState === 'spinning' ? '*' : 'spinning'" class="planet uranus"></div>
+    <div [@spin]="{value:neptuneState ,params:{translateValue:'400px', duration: '3.9s'}}"
+        (@spin.done)="neptuneState = neptuneState === 'spinning' ? '*' : 'spinning'" class="planet neptune"></div>
+</div>
